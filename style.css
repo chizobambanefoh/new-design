@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: hsl(0, 100%, 74%);
+    background-image: url(./images/bg-intro-mobile.png);
+    font-family: 'Poppins', sans-serif;
+}
+.container h1, p{ 
+    color: white;
+    text-align: center;
+    padding: 10px 0px;
+
+}
+.container{
+    width: 90%;
+    margin: 50px auto 30px;
+
+}
+.p-box{
+    background-color:hsl(248, 32%, 49%);
+    padding: 10px;
+    border-radius: 8px;
+
+}
+.box-right > div p{
+    width: 70%;
+    margin: auto;
+    line-height: 28px;
+}
+form{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    
+}
+form p{
+    color: hsl(246, 25%, 77%);
+}
+.form-container{
+    background-color: white;
+    margin: 15px  0px;
+    padding: 25px;
+    border-radius: 8px;
+}
+input{
+    width: 90%;
+    padding: 20px;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    border: 1px solid hsl(246, 25%, 77%);
+    font-weight: 700;
+    color: hsl(246, 25%, 77%);
+    
+
+}
+button{
+    width: 90%;
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    padding: 20px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+
+
+}
+form p{
+    font-size: 13px;
+}
+
+
+
+
+
+span{
+    color: hsl(0, 100%, 74%);
+}
+@media (min-width: 900px) {
+    .container{
+        display: grid;
+        grid-template-columns: 3fr 4fr;
+        align-items: center;
+        gap: 100px;
+    }
+    p{
+        text-align: left;
+
+    }
+    h1{
+        text-align: left;
+        width: 90%; 
+        font-size: 3rem;
+
+
+    }
+    .p-box p{
+        text-align: center;
+    }
+}
